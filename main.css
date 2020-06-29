@@ -5360,36 +5360,9 @@
       nav .button-collapse i {
         height: 56px;
         line-height: 56px; }
-    nav .brand-logo {
-      position: absolute;
-      color: #fff;
-      display: inline-block;
-      font-size: 2.1rem;
-      padding: 0;
-      white-space: nowrap; }
-      nav .brand-logo.center {
-        left: 50%;
-        transform: translateX(-50%); }
-      @media only screen and (max-width: 992px) {
-        nav .brand-logo {
-          left: 50%;
-          transform: translateX(-50%); }
-          nav .brand-logo.left, nav .brand-logo.right {
-            padding: 0;
-            transform: none; }
-          nav .brand-logo.left {
-            left: 0.5rem; }
-          nav .brand-logo.right {
-            right: 0.5rem;
-            left: auto; } }
-      nav .brand-logo.right {
-        right: 0.5rem;
-        padding: 0; }
-      nav .brand-logo i,
-      nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
-      nav .brand-logo i.material-icons {
-        float: left;
-        margin-right: 15px; }
+    
+ 
+
     nav .nav-title {
       display: inline-block;
       font-size: 32px;
@@ -8619,19 +8592,6 @@
     box-shadow: none;
     -moz-box-shadow: none; }
   
-  nav .brand-logo {
-    color: black;
-    display: inline-table; }
-  
-  nav .brand-logo-small {
-    font-size: 1.5rem; }
-  
-  nav .brand-logo-small #header-logo {
-    position: relative;
-    top: 3px;
-    width: 22px;
-    height: 22px; }
-  
   nav ul a {
     color: #4db6ac !important;
     font-size: 1.1rem;
@@ -9886,17 +9846,6 @@
   
   nav {
     background-color: transparent; }
-  
-  nav .brand-logo {
-    font-weight: bold;
-    font-size: 1.3rem; }
-  
-  nav .brand-logo > img {
-    width: 22px;
-    height: 22px;
-    position: relative;
-    margin-right: 10px;
-    top: 4px; }
   
   .button-collapse {
     color: #26a69a; }
