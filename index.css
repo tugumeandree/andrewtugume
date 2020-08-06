@@ -276,9 +276,56 @@
   
 }
 
+#vendas-cb .vendas-cb-txt{
+    float: right;
+    }
+    #vendas-cb .vendas-cb-txt h4{
+    font-size: 36px;
+    color: #090236;
+    line-height: 1.3em;
+    font-weight: 700;
+    }
+    #vendas-cb .vendas-cb-txt p{
+    font-size: 22px;
+    line-height: 1.8em;
+    color: #090236;
+    }
+    #vendas-cb .vendas-cb-img{
+    float: left;
+    margin-top: -30%;
+    padding: 10% 2% 2% 2%;
+    }
 
-
-
+    #vendas-cb-button button{
+        text-transform: unset !important;
+        height: fit-content !important;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background: linear-gradient(#FDB913, #FE9005);
+        border:none;
+        border-radius: 0;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        box-shadow: 0px 4px #9B3B21;
+        position: relative;
+        font-family: Montserrat;
+        font-size: 25px !important;
+        font-weight: 700;
+        z-index: 99;
+        transition: all 0.3s;
+        font-size: 18px !important;
+        color: #190426;
+        width: 40%;
+        white-space: pre-wrap;
+        }
+        #vendas-cb-button button:hover{
+        transform: translateY(4px);
+        border-bottom-width: 2px;
+        box-shadow: none;
+        }
 
 
 
