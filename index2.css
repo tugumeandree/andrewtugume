@@ -1,5 +1,4 @@
-html { height: 100%; width: 100%; position: absolute; }
-body {  height: 100%; width: 100%; position: absolute; }
+
 
 
 .back {
@@ -75,9 +74,7 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
 .card-action {
   white-space: nowrap;
 }
- header, main, footer {
-  padding-left: 300px;
-}
+
 @media only screen and (max-width: 992px) {
    header, main, footer {
     padding-left: 0;

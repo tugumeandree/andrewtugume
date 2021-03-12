@@ -2190,17 +2190,8 @@
   
   .page-footer {
     padding-top: 20px;
-    background-color: #ee6e73; }
-    .page-footer .footer-copyright {
-      overflow: hidden;
-      min-height: 50px;
-      display: flex;
-      align-items: center;
-      padding: 10px 0px;
-      color: rgba(255, 255, 255, 0.8);
-      background-color: rgba(51, 51, 51, 0.08); }
-  
-  table, th, td {
+     }
+    table, th, td {
     border: none; }
   
   table {
@@ -8799,27 +8790,13 @@
       position: relative; } }
   
   /* Footer */
-  footer.page-footer {
-    z-index: 1010;
-    background: #fbfbfb;
-    margin: 100px 0px 0px 0px;
-    padding: 0px;
-    border-top: 1px solid #eee;
-    bottom: 0px;
-    width: 100%; }
+ 
   
-  footer.page-footer a {
-    color: #bdbdbd;
-    line-height: 3rem; }
+
   
-  footer.page-footer a:hover {
-    color: #9e9e9e; }
+ 
   
-  footer.page-footer .footer-copyright {
-    background-color: #fbfbfb;
-    height: 80px;
-    line-height: 80px;
-    margin: 0px 32px; }
+
   
   @media only screen and (min-width: 993px) {
     footer.page-footer .footer-copyright {
