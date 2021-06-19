@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Andrew Tugume</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Keywords" content="HTML, CSS,JavaScript,jQuery, Bootstrap,NodeJS, React,R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Courses, Lessons, References, Examples, Source code, Demos, Tips">
+		<meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="preload" href="https://www.w3schools.com/lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin=""> 
+		<link rel="stylesheet" href="new.css">
+		
+		
+		
+		<script>
+		function gSearch(el) {
+		var cx = '012971019331610648934:m2tou3_miwy';
+		var gcse = document.createElement('script'); gcse.id = 'gSearch'; gcse.type = 'text/javascript'; gcse.async = true;
+		gcse.src = 'https://www.google.com/cse/cse.js?cx=' + cx;
+		var el = document.getElementById('gSearch');
+		if (el == null) {
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+		}
+		open_search(el);
+		};
+		
+		function gTra(el) {
+		var gtra = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;
+		gtra.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+		var el = document.getElementById('gTra');
+		if (el == null) {
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);
+		}
+		open_translate(el);
+		};
+		
+		
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-3855518-1', 'auto');
+		ga('require', 'displayfeatures');
+		ga('require', 'GTM-WJ88MZ5');
+		ga('send', 'pageview');
+		</script>
+		<style>
+		/* Customize w3schools23.css */
+		#nav_tutorials,
+		#nav_references,
+		#nav_exercises {
+		margin-top: 0;
+		}
+		
+		@media screen and (min-width: 769px) {
+		.w3-bar-block .w3-button {
+		padding: 0 16px !important;
+		}
+		}
+		
+		.fa {
+		font-size: 20px;
+		}
+		
+		#main {
+		padding: 0;
+		border-right: none;
+		}
+		
+		.fa-thumbs-o-up:hover {
+		color: #fff;
+		}
+		
+		@media (min-width:1675px) {
+		#main {
+		width: auto;
+		}
+		}
+		
+		#nav_tutorials,
+		#nav_references,
+		#nav_exercises {
+		display: none;
+		padding-bottom: 40px;
+		position: absolute;
+		width: 100%;
+		z-index: 5 !important;
+		}
+		
+		#nav_tutorials h3,
+		#nav_references h3,
+		#nav_exercises h3,
+		#sectionxs_tutorials h3,
+		#sectionxs_references h3,
+		#sectionxs_exercises h3 {
+		padding-left: 6px;
+		color: #FFF4A3;
+		}
+		
+		div.cse .gsc-control-cse,
+		div.gsc-control-cse {
+		padding: 0;
+		margin-top: 0;
+		}
+		
+		/* Customize W3.CSS */
+		.w3-col.l4 .w3-card-2 {
+		padding: 15px 10px;
+		height: 260px;
+		}
+		
+		.w3-bar {
+		position: relative;
+		z-index: 4;
+		font-size: 18px;
+		background-color: white;
+		color:#282A35;
+		}
+		
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+		font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		h1 {
+		font-size: 80px;
+		margin: 2px 0 -20px 0 !important;
+		}
+		
+		.green-border {
+		border-left: 4px solid #04AA6D;
+		}
+		
+		.w3-round, .w3-round-medium {
+		border-radius: 5px;
+		}
+		
+		.tryit-button {
+		background-color: #04AA6D;
+		color: white;
+		border-radius: 25px;
+		font-size: 18px;
+		width:200px;
+		}
+		
+		.tut-button {
+		background-color: #04AA6D;
+		color: white;
+		font-size: 18px;
+		margin: auto;
+		display: block;
+		width: 200px;
+		border-radius: 25px;
+		}
+		
+		.w3csstut {
+		height: 315px;
+		}
+		
+		.tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {
+		background-color: #059862 !important;
+		color:white!important;
+		}
+		
+		.bar-item-hover:hover {
+		background-color: #04AA6D!important;
+		color:white!important;
+		}
+		
+		.bar-icon-hover:hover,.fa-logo:hover {
+		background-color: white !important;
+		color:#059862!important;
+		}
+		
+		.mystyle,.mystyle:hover {
+		background-color: #282A35!important;
+		color:white!important;
+		}
+		
+		.closenav_span:hover {
+		background-color: #282A35!important;
+		color: #059862!important;
+		}
+		
+		.ref-button {
+		background-color: white;
+		font-size: 18px;
+		margin: auto;
+		display: block;
+		width: 200px;
+		border-radius: 25px;
+		color: #000;
+		}
+		
+		.ref-button:hover {
+		background-color: #E7E9EB!important;
+		color: black;
+		}
+		
+		.black-color {
+		background-color: #282A35;
+		color: white;
+		}
+		
+		.black-color:hover {
+		background-color: #000!important;
+		color: white!important;
+		}
+		
+		.grey-color {
+		background-color: #E7E9EB;
+		color: black
+		}
+		
+		.exercise-button {
+		background-color: #04AA6D;
+		color: white;
+		padding: 17px;
+		font-size: 19px;
+		width: 100%;
+		}
+		
+		#w3loginbtn {
+		width:70px;
+		background-color:#04AA6D;
+		color:white;
+		border-radius:25px;
+		font-size:12px;
+		line-height:2;
+		display:none;
+		}
+		
+		#loginactioncontainer {
+		margin-left:0;
+		}
+		@media screen and (min-width:601px) {
+		#navbtn_menu {
+		display: block;
+		}
+		}
+		
+		@media screen and (min-width:600px) {
+		#w3loginbtn {
+		width:130px;
+		line-height:1.5;
+		font-size:18px;
+		}
+		#loginactioncontainer {
+		margin-left:50px;
+		}
+		}
+		
+		@media screen and (min-width:861px) {
+		#myAccordion,#navbtn_menu,
+		.hidesm {
+		display: none !important;
+		}
+		}
+		
+		@media screen and (max-width:400px) {
+		#nav_translate_btn,#nav_search_btn,#navbtn_menu {
+		padding:8px 8px;
+		}
+		#loginactioncontainer {
+		width:70px;
+		}
+		
+		}
+		
+		
+		@media screen and (max-width:860px) {
+		.barex, .navex  {
+		display: none !important;
+		}
+		#googleSearch, #google_translate_element {
+		top:75px;
+		width:100%!important;
+		right:0!important;
+		padding-top:19px!important;
+		}
+		}
+		
+		
+		@media screen and (max-width:768px) {
+		h1,
+		.w3-jumbo {
+		font-size: 60px !important;
+		}
+		}
+		
+		@media screen and (max-width:380px) {
+		div.cse .gsc-control-cse,
+		div.gsc-control-cse {
+		padding: 0;
+		margin-top: -4px;
+		}
+		}
+		
+		@media only screen and (max-device-width: 1366px) {
+		.w3-hide-device {
+		display: none;
+		}
+		}
+		
+		#w3_cert_badge {
+		position: absolute;
+		right: 5%;
+		width: 220px;
+		transform: rotate(10deg);
+		bottom: -15%;
+		}
+		
+		#w3_cert_arrow {
+		position: absolute;
+		right: 240px;
+		width: 220px;
+		transform: rotate(10deg);
+		bottom: 0;
+		z-index: 1;
+		}
+		
+		#howto_padding {
+		padding: 48px 24px 80px 24px
+		}
+		
+		#getdiploma {
+		position: relative;
+		padding: 0 60px 50px 60px;
+		margin-bottom: 85px;
+		background-color: #282A35;
+		color: #FFC0C7;
+		font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		#getdiploma p {
+		font-size: 52px;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		#getdiploma h2 {
+		font-size: 62px;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-family: 'Source Sans Pro', sans-serif;
+		}
+		
+		#getdiploma a {
+		border-radius: 50px;
+		font-size: 18px;
+		background-color: #04AA6D;
+		padding: 17px 55px
+		}
+		
+		@media screen and (max-width: 680px) {
+		#w3_cert_badge {
+		width: 150px;
+		right: 2%;
+		}
+		}
+		
+		@media screen and (max-width: 1155px) {
+		#w3_cert_arrow {
+		display: none;
+		}
+		}
+		
+		@media screen and (max-width: 992px) {
+		#w3_cert_arrow {
+		display: block;
+		}
+		.w3csstut {
+		height: auto;
+		}
+		
+		}
+		
+		@media screen and (min-width: 1844px) {
+		#w3_cert_badge {
+		width: 190px;
+		right: 2%;
+		}
+		
+		#w3_cert_arrow {
+		right: 169px;
+		}
+		}
+		
+		@media screen and (max-width: 800px) {
+		#w3_cert_arrow {
+		display: none;
+		}
+		
+		#getdiploma h2 {
+		font-size: 55px;
+		}
+		}
+		
+		@media screen and (max-width: 600px) {
+		#w3_cert_badge {
+		top: -35px;
+		right: 10px;
+		width: 100px;
+		}
+		
+		#howto_padding {
+		padding: 2px 24px 80px 24px
+		}
+		
+		}
+		
+		@media screen and (max-width: 500px) {
+		#getdiploma p {
+		font-size: 40px;
+		}
+		#getdiploma a {
+		width: 100%;
+		}
+		}
+		.tutbuttons a{
+		text-decoration:none;
+		}
+		
+		.tutbuttons a div {
+		opacity:0.9;
+		}
+		
+		.tutbuttons a:hover div {
+		opacity:1;
+		}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- begin cmp -->
+		<script src="./W3Schools Online Web Tutorials_files/sncmp_stub.min.js.download"></script>
+		<style>
+		#snigel-cmp-framework .sn-b-def.sn-blue {color: #ffffff!important;background-color: #04AA6D!important;border-color: #04AA6D!important;}
+		#snigel-cmp-framework .sn-b-def { border-color: #04AA6D!important;color: #04AA6D!important;}
+		#snigel-cmp-framework .sn-selector ul li { color: #04AA6D!important}
+		#snigel-cmp-framework .sn-selector ul li:after { background-color: #04AA6D!important; }
+		#snigel-cmp-framework .sn-footer-tab .sn-privacy a {color:#04AA6D!important;}
+		#snigel-cmp-framework .sn-arrow:after, #snigel-cmp-framework .sn-arrow:before { background-color: #04AA6D!important; }
+		#snigel-cmp-framework .sn-switch input:checked+span::before { background-color: #04AA6D!important; }
+		#snigel-cmp-framework .sn-logo .sn-inner-logo img { max-height: 60px; margin: auto!important;}
+		#snigel-cmp-framework h1 { margin: 10px 0!important;}
+		#adconsent-usp-link {border: 1px solid #04AA6D!important;color: #04AA6D!important;}
+		#adconsent-usp-banner-optout input:checked+.adconsent-usp-slider {background-color:#04AA6D!important;}
+		#adconsent-usp-banner-btn {color:#ffffff;border: solid 1px #04AA6D!important;background-color: #04AA6D!important;}</style>
+		<script type="text/javascript">
+		__cmp("setLogo", "https://www.w3schools.com/images/w3schools_logo_500_04AA6D.png");
+		__cmp("setPrivacyPolicy", "https://www.w3schools.com/about/about_privacy.asp");
+		</script>
+		<script async="" type="text/javascript" src="./W3Schools Online Web Tutorials_files/snhb-loader.min.js.download"></script>
+		<!-- end cmp -->
+		<script src="./W3Schools Online Web Tutorials_files/my-learning.js.download"></script>
+		<script type="text/javascript" src="./W3Schools Online Web Tutorials_files/snhb-cmp.min.js.download"></script><script type="text/javascript" src="./W3Schools Online Web Tutorials_files/saved_resource" async=""></script><script type="text/javascript" src="./W3Schools Online Web Tutorials_files/snhbGlobalSettings.js.download" async=""></script><script type="text/javascript" src="./W3Schools Online Web Tutorials_files/gpt.js.download" async=""></script><meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./W3Schools Online Web Tutorials_files/pubads_impl_2021061503.js.download" async=""></script>
+		
+		<title>Andrew Tugume</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="description" content="Andrew Tugume Software Engineer">
+				<meta name="keywords" content="Software,Engineer,Learning, Consultant">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+						<link type="text/css" rel="stylesheet" href="style.css">
+							<!-- Compiled and minified CSS -->
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+								<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+									<!-- Google Fonts -->
+									<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+										<!--Import Google Icon Font-->
+										<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+											<link type="text/css" rel="stylesheet" href="./main.css">
+												<link type="text/css" rel="stylesheet" href="./index.css">
+
+												<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+												<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+												<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+												<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+												<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+												<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+												<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+												<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+												<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+												<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+												<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+												<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+												<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+													<style>
+.brand-logo{
+width:55px;
+height:55px;
+
+}
+</style>
+												</head>
+												<body data-gr-c-s-loaded="true">
+													<div id="hero-background-container" class="hide-on-med-and-down">
+														<div class="home-width relative"></div>
+													</div>
+													<header>
+														<nav>
+															<div class="nav-wrapper">
+																<a class="brand-logo" href="https://github.com/tugumeandree">
+																	<img src="logo.png">
+																	</a>
+																	<a href="#" data-target="mobile-demo" class="sidenav-trigger black-text">
+																		<i class="material-icons">menu</i>
+																	</a>
+																	<ul class="left hide-on-med-and-down">
+																		<li class="top-level-nav">
+																			<a href="about.html">About Andrew</a>
+																		</li>
+																	</ul>
+																	<ul class="right hide-on-med-and-down">
+																		<li class="top-level-nav">
+																			<a href="https://www.qraftstore.com/" target="_blank"  class="btn btn-compact btn-hollow">Qraft Store</a>
+																		</li>
+																		<li class="top-level-nav">
+																			<a href="https://www.shop.andrewtugume.com/" target="_blank"  class="btn btn-compact btn-hollow">Apparel Store</a>
+																		</li>
+																		
+																		
+																	</ul>
+																	
+																	<ul id="mobile-demo" class="sidenav" style="transform: translateX(-100%);">
+																		<li class="top-level-nav">
+																			<a href="about.html">About Andrew</a>
+																		</li>
+																		<li class="divider"></li>
+																		<li class="top-level-nav">
+																			<a href="https://www.qraftstore.com/" target="_blank"  class="btn btn-compact btn-hollow">Qraft Store</a>
+																		</li>
+																		<li class="top-level-nav">
+																			<a href="https://www.shop.andrewtugume.com/" target="_blank"  class="btn btn-compact btn-hollow">Apparel Store</a>
+																		</li>
+																		
+																		<li class="divider"></li>
+																	</ul>
+																</div>
+															</nav>
+														</header>
+
+
+														<div class="w3-main" id="main">
+
+															<div class="w3-row w3-padding-32 ws-black">
+															<div class="w3-content" style="max-width:1400px">
+															
+															 <div class="w3-col l6 w3-center" style="padding:3%">
+															  <h1 style="font-size:100px;font-weight:700">HTML</h1>
+															  <p style="font-size:19px;">The language for building web pages</p>
+															  <a href="https://www.w3schools.com/html/default.asp" class="w3-button tut-button">Learn HTML</a><br>
+															  <a href="https://www.w3schools.com/tags/default.asp" class="w3-button ref-button">HTML Reference</a>
+															  </div>
+															 <div class="w3-col l6" style="padding:3%">
+															  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+															   <h3>HTML Example:</h3>
+															   <div class="w3-code htmlHigh notranslate green-border">
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML Tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+															   </div>
+															   <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+															  </div>
+															 </div>
+															 </div>
+															</div>
+															
+															<div class="w3-row w3-padding-32 ws-light-green">
+															<div class="w3-content" style="max-width:1400px">
+															 <div class="w3-col l6 w3-center" style="padding:3%">
+															  <h1 style="font-size:100px;font-weight:700">CSS</h1>
+															  <p style="font-size:19px;">The language for styling web pages</p>
+															  <a href="https://www.w3schools.com/css/default.asp" class="w3-button w3-block tut-button">Learn CSS</a><br>
+															  <a href="https://www.w3schools.com/cssref/default.asp" class="w3-button w3-block ref-button black-color">CSS Reference</a>
+															  </div>
+															 <div class="w3-col l6" style="padding:3%">
+															  <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+															  <h3>CSS Example:</h3>
+															  <div class="w3-code cssHigh notranslate green-border"><span class="cssselectorcolor" style="color:brown">
+															body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+															&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+															h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+															&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+															&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span></span></div>
+															  <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_default" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+															  </div>
+															 </div>
+															 </div>
+															</div>
+															
+															<div class="w3-row w3-padding-32 ws-yellow">
+															<div class="w3-content" style="max-width:1400px">
+															 <div class="w3-col l6 w3-center" style="padding:3%">
+															  <h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important">JavaScript</h1>
+															  <p style="font-size:19px">The language for programming web pages</p>
+															  <a href="https://www.w3schools.com/js/default.asp" class="w3-button w3-block tut-button">Learn JavaScript</a><br>
+															  <a href="https://www.w3schools.com/jsref/default.asp" class="w3-button w3-block ref-button black-color">JavaScript Reference</a>
+															 </div>
+															 <div class="w3-col l6" style="padding:3%">
+															  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+															   <h3>JavaScript Example:</h3>
+															   <div class="w3-code notranslate green-border">
+															   <div class="htmlHigh">
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="myFunction()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+															<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+															<span class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span class="jsnumbercolor" style="color:red">
+															</span>&nbsp; <span class="jskeywordcolor" style="color:mediumblue">var</span> x = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"demo"</span>);<br><span class="jsnumbercolor" style="color:red">
+															</span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">fontSize</span> = <span class="jsstringcolor" style="color:brown">"25px"</span>; <br><span class="jsnumbercolor" style="color:red">
+															</span>&nbsp; x.<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">color</span> = <span class="jsstringcolor" style="color:brown">"red"</span>; <br>}<br>
+															</span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+																</div>
+															   </div>
+															   <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+															  </div>
+															 </div>
+															 </div>
+															</div>
+															
+															<div class="w3-row w3-padding-32 ws-black">
+															<div class="w3-content" style="max-width:1400px">
+															 <div class="w3-col l6 w3-center" style="padding:3%">
+															  <h1 style="font-weight:700">PYTHON</h1>
+															  <p style="font-size:19px">A popular programming language</p>
+															  <a href="https://www.w3schools.com/python/default.asp" class="w3-button w3-block tut-button">Learn Python</a><br>
+															  <a href="https://www.w3schools.com/python/python_reference.asp" class="w3-button w3-block ref-button">Python Reference</a>
+															 </div>
+															 <div class="w3-col l6" style="padding:3%">
+															  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+															  <h3>Python Example:</h3>
+															  <div class="w3-code jsHigh notranslate green-border" style="height:180px"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+															</span>    <span class="jskeywordcolor" style="color:mediumblue">if</span> <span class="jsnumbercolor" style="color:red">5</span> &gt; <span class="jsnumbercolor" style="color:red">2</span>:<br>&nbsp; print(<span class="jsstringcolor" style="color:brown">"Five is greater than two!"</span>)<span class="jsnumbercolor" style="color:red">
+															</span>  </span></div>
+															  <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_indentation" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+															  </div>
+															 </div>
+															 </div>
+															</div>
+															
+															<div class="w3-row w3-padding-32 w3-white">
+															<div class="w3-content" style="max-width:1400px">
+															 <div class="w3-col l6 w3-center" style="padding:3%">
+															  <h1 style="font-weight:700">SQL</h1>
+															  <p style="font-size:19px">A language for accessing databases</p>
+															  <a href="https://www.w3schools.com/sql/default.asp" class="w3-button w3-block tut-button">Learn SQL</a><br>
+															  <a href="https://www.w3schools.com/sql/sql_ref_keywords.asp" class="w3-button ref-button black-color">SQL Reference</a>
+															 </div>
+															 <div class="w3-col l6" style="padding:3%">
+															  <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+															  <h3>SQL Example:</h3>
+															  <div class="w3-code sqlHigh notranslate green-border" style="height:180px"><span class="sqlcolor" style="color:black"><span class="sqlnumbercolor" style="color:">
+															</span>   <span class="sqlkeywordcolor" style="color:mediumblue">SELECT</span> * <span class="sqlkeywordcolor" style="color:mediumblue">FROM</span> Customers<br><span class="sqlnumbercolor" style="color:">
+															</span>   <span class="sqlkeywordcolor" style="color:mediumblue">WHERE</span> Country=<span class="sqlstringcolor" style="color:brown">'Mexico'</span>;<span class="sqlnumbercolor" style="color:">
+															</span>  </span></div>
+															  <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where" target="_blank" class="w3-button tryit-button">Try it Yourself</a>
+															  </div>
+															 </div>
+															</div>
+															</div>
+															
+															<div class="w3-row w3-padding-64 ws-black">
+															  <div style="max-width:1400px;margin:auto">
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round" style="color:black;background-color:#FFC0C7;padding:24px">
+																	<h2 style="font-size:45px;font-weight:700">PHP</h2>
+																	<div style="height:70px;">
+																	  <h5 class="w3-text-dark-grey">A web server programming language</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/php/default.asp" class="w3-button tut-button black-color">Learn PHP</a>
+																  </div>
+															
+																</div>
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round" style="background-color: #FFF4A3;color:black;padding:24px">
+																	<h2 style="font-size:45px;font-weight:700">jQuery</h2>
+																	<div style="height:70px;">
+																	  <h5 class="w3-text-dark-grey">A JS library for developing web pages</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/jquery/default.asp" class="w3-button tut-button black-color">Learn jQuery</a>
+																  </div>
+																</div>
+															
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round" style="color:black;background-color:#F3ECEA;padding:24px">
+																	<h2 style="font-size:45px;font-weight:700">Java</h2>
+																	<div style="height:70px;">
+																	  <h5 class="w3-text-dark-grey">A programming language</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/java/default.asp" class="w3-button tut-button black-color">Learn Java</a>
+																  </div>
+																</div>
+															
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round" style="color:black;background-color:#D9EEE1;padding:24px">
+																	<h2 style="font-size:45px;font-weight:700">C++</h2>
+																	<div style="height:70px;">
+																	  <h5 class="w3-text-dark-grey">A programming language</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/cpp/default.asp" class="w3-button tut-button black-color">Learn C++</a>
+																  </div>
+																</div>
+															
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round w3csstut" style="color:black;background-color:#96D4D4;padding:24px;">
+																	<h2 style="font-size:45px;font-weight:700">W3.CSS</h2>
+																	<div style="height:70px;">
+																	  <h5>A CSS framework for faster and better responsive web pages</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/w3css/default.asp" class="w3-button tut-button black-color">Learn W3.CSS</a>
+																  </div>
+																</div>
+															
+																<div class="w3-col l6 w3-center" style="padding:2% 3%;">
+																  <div class="w3-card-2 w3-round" style="color:black;background-color:#E7E9EB;padding:24px;height:315px;">
+																	<h2 style="font-size:45px;font-weight:700">Bootstrap</h2>
+																	<div style="height:70px;">
+																	  <h5 class="w3-text-dark-grey">A CSS framework for designing better web pages</h5>
+																	</div>
+																	<a href="https://www.w3schools.com/bootstrap/default.asp" class="w3-button tut-button black-color">LEARN BS3</a>
+																	<a href="https://www.w3schools.com/bootstrap4/default.asp" class="w3-button tut-button black-color" style="margin-top:16px;">LEARN BS4</a>
+																  </div>
+																</div>
+															  </div>
+															</div>
+															
+															<div class="w3-row ws-black tutbuttons" style="padding-bottom:64px;">
+															  <div style="max-width:1400px;margin:auto">
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/cs/index.php" title="C# Tutorial">
+																	<div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">C#</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/r/default.asp" title="R Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">R</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/kotlin/index.php" title="Kotlin Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 15px">
+																	  <h2 style="font-size:30px;font-weight:500">Kotlin</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/mysql/default.asp" title="MySQL Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">MySQL</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/nodejs/default.asp" title="NodeJS Tutorial">
+																	<div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">NodeJS</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/react/default.asp" title="React Tutorial">
+																	<div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">React</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/js/js_json.asp" title="JSON Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">JSON</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/angular/default.asp" title="AngularJS Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/w3js/default.asp" title="W3.JS Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">W3.JS</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/xml/default.asp" title="XML Tutorial">
+																	<div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">XML</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/sass/default.php" title="Sass Tutorial">
+																	<div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Sass</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/icons/default.asp" title="Icons Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Icons</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/css/css_rwd_intro.asp" title="Responsive Web Design Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">RWD</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/graphics/default.asp" title="Graphics Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Graphics</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/graphics/svg_intro.asp" title="SVG Tutorial">
+																	<div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">SVG</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/graphics/canvas_intro.asp" title="Canvas Tutorial">
+																	<div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Canvas</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp" title="Rasperry Pi Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0">
+																	  <h2 style="font-size:30px;font-weight:500">Raspberry Pi</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/cybersecurity/index.php" title="Cyber Security Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 0">
+																	  <h2 style="font-size:30px;font-weight:500">Cyber<span class="w3-hide-medium w3-hide-large"> Security</span></h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/colors/default.asp" title="Colors Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Colors</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/git/default.asp" title="Git Tutorial">
+																	<div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">GIT</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/python/matplotlib_intro.asp" title="Matplotlib Tutorial">
+																	<div class="w3-card-2 w3-round ws-grey" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Matplotlib</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/python/numpy/default.asp" title="Python Numpy Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">NumPy</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/python/pandas/default.asp" title="Python Pandas Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Pandas</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/python/scipy/index.php" title="Python SciPy Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">SciPy</h2>
+																	</div>
+																  </a>
+																</div>
+																
+																<!-- End small boxes -->
+																
+																	<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/asp/default.asp" title="ASP Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">ASP</h2>
+																	</div>
+																  </a>
+																</div>
+															
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/accessibility/index.php" title="Accessibility Tutorial">
+																	<div class="w3-card-2 w3-round ws-grey" style="padding:24px 0">
+																	  <h2 style="font-size:30px;font-weight:500">Accessibility</h2>
+																	</div>
+																  </a>
+																</div>
+															
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/appml/default.asp" title="AppML Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">AppML</h2>
+																	</div>
+																  </a>
+																</div>
+															
+															
+																<div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
+																  <a href="https://www.w3schools.com/howto/default.asp" title="How To Coding Snippets">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">How To's</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<!-- Four boxes -->
+																
+																<div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+																  <a href="https://www.w3schools.com/python/python_ml_getting_started.asp" title="Machine Learning Tutorial">
+																	<div class="w3-card-2 w3-round ws-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Machine Learning</h2>
+																	</div>
+																  </a>
+																</div>
+																
+																<div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+																  <a href="https://www.w3schools.com/ai/default.asp" title="Artificial Intelligence Tutorial">
+																	<div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Artificial Intelligence</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+																  <a href="https://www.w3schools.com/statistics/index.php" title="Statistics Tutorial">
+																	<div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Statistics</h2>
+																	</div>
+																  </a>
+																</div>
+															
+																<div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+																  <a href="https://www.w3schools.com/datascience/default.asp" title="Data Science Tutorial">
+																	<div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
+																	  <h2 style="font-size:30px;font-weight:500">Data Science</h2>
+																	</div>
+																  </a>
+																</div>
+															
+															  </div>
+															</div>
+															
+															<div class="w3-center" style="background-color:#F3ECEA;padding-top:78px;padding-bottom:95px">
+															<div class="w3-content" style="max-width:1400px">
+															  <h1 style="font-size:65px;font-weight:700;">Color Picker</h1>
+															  <h4 style="margin-top:25px;">W3Schools' famous color picker</h4>
+															  <a href="https://www.w3schools.com/colors/colors_picker.asp" class="w3-hover-opacity"><img style="width:150px;height:128px;margin-top:16px;" src="./W3Schools Online Web Tutorials_files/colorpicker.png" alt="Colorpicker"></a>
+															
+															</div>
+															</div>
+															
+															<div class="w3-row ws-turquoise" style="padding-top:40px;padding-bottom:40px;">
+															 <div class="w3-col l12 w3-center" style="padding:3%;">
+															  <h1 style="font-family: &#39;Freckle Face&#39;, cursive;font-size:48px">Code Game</h1>
+															  <h2 style="font-family: &#39;Freckle Face&#39;, cursive;">Help the Lynx collect pine cones!</h2>
+															  <a href="https://www.w3schools.com/codegame/index.html" target="_blank" class="w3-hover-opacity"><img style="margin:16px 0;" src="./W3Schools Online Web Tutorials_files/w3lynx_200.png" alt="Code Game"></a>
+															  <p><a class="w3-button tut-button black-color" href="https://www.w3schools.com/codegame/index.html" target="_blank">Play Game</a></p>
+															 </div>
+															</div>
+															
+															<div class="w3-center w3-padding-64 ws-black" style="padding-bottom:80px!important">
+															  <h2 style="font-size:45px;font-weight:700">Exercises</h2>
+															  <h4>Test yourself with exercises</h4>
+															  <div class="w3-row-padding w3-content">
+																<div class="w3-third">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/html/html_exercises.asp">HTML Exercises</a></p>
+																</div>
+																<div class="w3-third">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/css/css_exercises.asp">CSS Exercises</a></p>
+																</div>
+																<div class="w3-third w3-hide-large w3-hide-small">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/js/js_exercises.asp">JS Exercises</a></p>
+																</div>
+																<div class="w3-third w3-hide-medium">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/js/js_exercises.asp">JavaScript Exercises</a></p>
+																</div>
+																<div class="w3-third w3-hide-medium w3-hide-large">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/sql/sql_exercises.asp">SQL Exercises</a></p>
+																</div>
+																<div class="w3-third w3-hide-medium w3-hide-large">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/python/python_exercises.asp">Python Exercises</a></p>
+																</div>
+															  </div>
+															  <div class="w3-row-padding w3-content w3-hide-medium w3-hide-small">
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/sql/sql_exercises.asp">SQL</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/python/python_exercises.asp">Python</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/php/php_exercises.asp">PHP</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/jquery/jquery_exercises.asp">jQuery</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/java/java_exercises.asp">Java</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/cpp/cpp_exercises.asp">C++</a></p>
+																</div>
+																<div class="w3-col" style="width:14.28%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/cs/cs_exercises.asp">C#</a></p>
+																</div>
+															  </div>
+															  <div class="w3-row-padding w3-content w3-hide-small w3-hide-large">
+																<div class="w3-col" style="width:20%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/sql/sql_exercises.asp">SQL</a></p>
+																</div>
+																<div class="w3-col" style="width:20%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/python/python_exercises.asp">Python</a></p>
+																</div>
+																<div class="w3-col" style="width:20%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/php/php_exercises.asp">PHP</a></p>
+																</div>
+																<div class="w3-col" style="width:20%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/jquery/jquery_exercises.asp">jQuery</a></p>
+																</div>
+																<div class="w3-col" style="width:20%">
+																  <p><a class="w3-button exercise-button w3-round" href="https://www.w3schools.com/java/java_exercises.asp">Java</a></p>
+																</div>
+															  </div>
+															</div>
+															
+															<div class="w3-center ws-grey" style="padding:64px 24px 90px 24px">
+															  <h2 style="font-size:45px;font-weight:700">Web Templates</h2>
+															  <h4>Browse our selection of <strong>free</strong> responsive HTML Templates</h4>
+															  <div class="w3-content">
+																<a href="https://www.w3schools.com/w3css/w3css_templates.asp"><img src="./W3Schools Online Web Tutorials_files/w3css_templates.jpg" style="width:100%;margin:16px 0 20px 0" alt="W3.CSS Templates"></a>
+															  </div>
+															  <p><a href="https://www.w3schools.com/w3css/w3css_templates.asp" class="w3-button tut-button black-color w3-padding-16 w3-mobile" style="width:50%">BROWSE TEMPLATES</a></p>
+															</div>
+															
+															<div class="w3-panel" id="getdiploma" style="margin-top:0;padding-bottom:64px;">
+															<h2>Kickstart your career</h2>
+															<p>Get certified by completing a course</p>
+															<a class="w3-btn w3-margin-bottom" href="https://courses.w3schools.com/" target="_blank">Get started</a>
+															
+															<svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+															<path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+															</svg>
+															<svg id="w3_cert_badge" data-name="w3_cert_badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"></circle><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2" transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2" transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3" transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">1</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"></path><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"></path></svg>
+															
+															</div>
+															
+															<div class="w3-white w3-center" id="howto_padding">
+															  <h2 style="font-size:45px;font-weight:700">How To Section</h2>
+															  <h4 class="w3-text-dark-grey">Code snippets for HTML, CSS and JavaScript</h4>
+															  <div class="w3-content w3-hide-device">
+																<div class="w3-row-padding" style="margin:32px -16px">
+																  <div class="w3-col l6 s12">
+																	<iframe src="./W3Schools Online Web Tutorials_files/tryhow_css_sidenav_ifr.html" style="width:100%;border:5px solid #ddd;height:300px"></iframe>
+																  </div>
+																  <div class="w3-col l6 w3-hide-small w3-hide-medium">
+																	<iframe src="./W3Schools Online Web Tutorials_files/tryhow_css_sidenav_ifr2.html" style="width:100%;border:5px solid #ddd;height:300px"></iframe>
+																  </div>
+																</div>
+															  </div>
+															
+															  <p><a href="https://www.w3schools.com/howto/default.asp" class="w3-button tut-button black-color w3-padding-16 w3-mobile" style="width:50%;">LEARN HOW TO</a></p>
+															</div>
+															
+															<footer class="w3-container w3-center w3-padding-32 ws-black">
+															 <div class="w3-container w3-padding-32">
+															   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="https://courses.w3schools.com/" target="_blank" style="font-size:17px;margin-top:-9px">COURSES</a>
+															   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="https://www.w3schools.com/quiztest/default.asp" style="font-size:17px;margin-top:-9px;margin-left:12px">QUIZZES</a>
+															   <a class="w3-button w3-white w3-hide-small w3-round w3-hide-medium w3-left" href="https://www.w3schools.com/html/html_exercises.asp" style="font-size:17px;margin-top:-9px;margin-left:12px">EXERCISES</a>
+															   <a class="w3-button w3-white w3-hide-large w3-round" href="https://courses.w3schools.com/" target="_blank" style="font-size:16px;margin-bottom:16px">COURSES</a>
+															   <a class="w3-button w3-white w3-hide-large w3-round" href="https://www.w3schools.com/quiztest/default.asp" style="font-size:16px;margin-bottom:16px;">QUIZZES</a>
+															   <a class="w3-button w3-white w3-hide-large w3-round" href="https://www.w3schools.com/html/html_exercises.asp" style="font-size:16px;margin-bottom:16px;">EXERCISES</a>
+															   <nav class="w3-right w3-hide-medium w3-hide-small w3-wide">
+																<a href="https://www.w3schools.com/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none">FORUM</a> |
+																<a href="https://www.w3schools.com/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none">ABOUT</a>
+															   </nav>
+															   <nav class="w3-center w3-hide-large w3-margin-top w3-wide">
+																<a href="https://www.w3schools.com/forum/default.asp" target="_blank" class="w3-hover-text-green" style="text-decoration:none">FORUM</a> |
+																<a href="https://www.w3schools.com/about/default.asp" target="_top" class="w3-hover-text-green" style="text-decoration:none">ABOUT</a>
+															   </nav>
+															 </div>
+															 <div class="w3-container">
+															 <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.linkedin.com/company/w3schools.com/" title="W3Schools on LinkedIn"><i class="fa"></i></a>
+															  <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.instagram.com/w3schools.com_official/" title="W3Schools on Instagram"><i class="fa"></i></a>
+															  <a class="w3-bar-item w3-button w3-hover-white w3-xlarge w3-round w3-right topnav-some" target="_blank" href="https://www.facebook.com/w3schoolscom/" title="W3Schools on Facebook"><i class="fa"></i></a>
+															 </div>
+															 <p class="w3-medium">
+															 W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of
+															 all content. While using this site, you agree to have read and accepted our <a href="https://www.w3schools.com/about/about_copyright.asp" class="w3-hover-text-green">terms of use</a>, <a href="https://www.w3schools.com/about/about_privacy.asp" class="w3-hover-text-green">cookie and privacy policy</a>.<br>
+															 <a href="https://www.w3schools.com/about/about_copyright.asp" class="w3-hover-text-green">Copyright 1999-2021</a> by Refsnes Data. All Rights Reserved.<br><br></p>
+															 
+															 <a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+															 <i class="fa fa-thumbs-o-up w3-xxlarge w3-hover-opacity"></i></a>
+															 
+															 <div><a class="w3-button tut-button w3-mobile" href="https://shop.w3schools.com/" target="_blank" style="margin-bottom:16px;margin-top:32px;padding:12px 28px;width:50%">W3SCHOOLS SHOP</a></div>
+															
+															 <div id="fblikeframe" class="w3-modal">
+															  <div class="w3-modal-content w3-padding-64 w3-round" id="popupDIV"></div>
+															 </div>
+															</footer>
+															
+															<!-- END MAIN -->
+															</div>
+
+														<div class="container">
+															<div class="row">
+																<div  class="col s12 m6">
+																	<!-- <img src="https://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"> -->
+																	<div class="carousel">
+																		<a class="carousel-item" href="#one!"><img src="https://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"></a>
+																		<a class="carousel-item" href="#two!"><img src="https://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"></a>
+																		<a class="carousel-item" href="#three!"><img src="hhttps://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"></a>
+																		<a class="carousel-item" href="#four!"><img src="https://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"></a>
+																		<a class="carousel-item" href="#five!"><img src="https://res.cloudinary.com/dwa3soopc/image/upload/v1623888364/backhd_eq1lhj.png"></a>
+																	  </div>
+																	</div>
+																	<div class="col s12 m6">
+																		<div id="hero-text-container">
+																			<h1 id="hero-text" >Hi,I am 
+																			
+																				<span>Andrew</span>.
+																		
+																			</h1>
+																			<h2 id="hero-tag-line" >I am a 
+																			
+																				<span class="bold">Software Entrepreneur/Engineer</span>
+																			</h2>
+																			<div class="col-lg-6 vendas-cb-txt">
+																				<h4>I use technolgy to create art , design solutions and publish knowledge</h4>
+																				<p>Welcome ❤️</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+														</div>
+														<div id="pricing">
+															<div class="home-width">
+															
+																<div class="home-title center">
+																	<h3>
+																		2021 Portfolio
+																	</h3>
+																	<p class="flow-text secondary-text">
+																		Collection of apps/startups that I am currently building in 2021.
+																	</p>
+																</div>
+															
+																<div class="row">
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-red">
+																			<h5 class="center bold">PELARD-N</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(253, 125, 125, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(253, 125, 125, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(253, 125, 125, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.pelard-n.org/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-blue">
+																			<h5 class="center bold">Catalyzer</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(102, 159, 180, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(102, 159, 180, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(102, 159, 180, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://starthubafrica.com/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-yellow">
+																			<h5 class="center bold">Relworx</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<!-- Yellow -->
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(238, 219, 74, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Red -->
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(238, 219, 74, 0.45); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Blue -->
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(238, 219, 74, 0.75); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="#" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="row">
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-red">
+																			<h5 class="center bold">Menorah, Inc.</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(253, 125, 125, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(253, 125, 125, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(253, 125, 125, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="#" target= "_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-blue">
+																			<h5 class="center bold">Code Studio</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(102, 159, 180, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(102, 159, 180, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(102, 159, 180, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.codestudioug.com/" target = "_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-yellow">
+																			<h5 class="center bold">Pearl Valley</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<!-- Yellow -->
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(238, 219, 74, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Red -->
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(238, 219, 74, 0.45); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Blue -->
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(238, 219, 74, 0.75); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.pearl-valley.com/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-red">
+																			<h5 class="center bold">Qraft Store</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(253, 125, 125, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(253, 125, 125, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(253, 125, 125, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.qraftstore.com/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-blue">
+																			<h5 class="center bold">Qraft@3</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(102, 159, 180, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(102, 159, 180, 0.5); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(102, 159, 180, 0.8); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.qraftstore.com/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col s12 m4 center">
+																		<div class="home-pricing-panel home-pricing-panel-yellow">
+																			<h5 class="center bold">Qraft Academy</h5>
+																			
+																			<ul class="home-pricing-panel-features">
+																				
+																			</ul>
+																			<svg viewBox="0 0 100 50" preserveAspectRatio="none" width="50" height="50">
+																			  <g>
+																				<!-- Yellow -->
+																				<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(238, 219, 74, 0.3); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Red -->
+																				<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(238, 219, 74, 0.45); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+														
+																				<!-- Blue -->
+																				<path transform="translate(0, 0)" d="M100,30 Qs70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(238, 219, 74, 0.75); stroke-linejoin:round; stroke:#ffffff" stroke-width="0"></path>
+																			  </g>
+																			</svg>
+																			<div class="home-pricing-panel-footer">
+																				<a class="btn btn-large" href="https://www.qraftacademy.org/" target="_blank"> <svg style="width:24px;height:24px;top: 6px; position: relative; right: 2px;" viewBox="0 0 24 24">
+														<path fill="#ffffff" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"></path>
+														</svg>
+														
+														
+														</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="center">
+																	<p class="secondary-text">All rights <span class="bold">reserved</span>.</p>
+																</div>
+																<div class="spacer"></div>
+																<div class="spacer"></div>
+																<div class="spacer"></div>
+															</div>
+														</div>
+																		
+																		<br>
+																			
+
+
+																						<div id="vendas-cb">
+																							<div class="container">
+																								<div class="row">
+																									<div class="home-title center">
+																									
+																											
+																							
+																										<h3>
+																											Bootcamp
+																										</h3>
+																										
+																									</div>
+																									<div class="col s12">
+																										<div class="col s12 m6 vendas-cb-txt">
+																											<div class="col s12">
+																												<div id="hero-text-container">
+																													<h5>Become A 10X Software Engineer From 
+																							
+																														<a href="https://www.codestudioug.com/" target="_blank" >The Code Studio</a> <div class="public">
+																															<strong>
+																																<h3>Online</h3>
+																															</strong>
+																														</div>
+																													</h5>
+																									
+																												</div>
+																											</div>
+																										</div>
+																										<div class="col s12 m6 vendas-cb-img">
+																											<img class="img-fluid" src="https://s3.amazonaws.com/wordpress-cdn.eadbox.com/2019/01/29172311/IMG_Indicadores-021.png">
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+
+
+  <!-- Section: Blog -->
+
+  <section id="blog" class="section section-blog scrollspy">
+	<h3 class="center">One On One Online Mentorship</h3>
+	<div class="container">
+	<div class="row">
+	  <div class="col s12 m6">
+		<div class="card small">
+		  <div class="card-image">
+			<img src="https://img-a.udemycdn.com/course/750x422/643800_5937_2.jpg" />
+			<span class="card-title">Nodejs Online</span>
+		  </div>
+		  <div class="card-content">
+			<p>
+				About 400 participants from 11 nations joined.
+			</p>
+		  </div>
+		  <div class="card-action"><a href="https://www.node.andrewtugume.com/">JOIN</a></div>
+		</div>
+	  </div>
+	  
+	  <div class="col s12 m6">
+		<div class="card small">
+		  <div class="card-image">
+			<img src="https://reactapp.ir/wp-content/uploads/reactjs.jpg" />
+			<span class="card-title">Reactjs Online</span>
+		  </div>
+		  <div class="card-content">
+			<p>
+				Starting October 2020
+			</p>
+		  </div>
+		  <div class="card-action"><a href="#">BOOK A SEAT</a></div>
+		</div>
+	  </div>
+	</div>
+</div>
+  </section>
+
+  <!-- Section: Follow -->
+
+		
+  
+  <div  class="home-width">
+	<div class="center">
+		<div  class="home-width">
+			<div class="center">
+				<div id="section1" style="  margin-top:50px; margin-bottom: 100px; text-align: center; font-size:200%;">
+					<div class="sect-heading">
+						<!--<div style="margin-top:10px; background-color:black; width:100px; height:3px;"></div>-->
+						<div class="public">
+							<strong>
+								<h3>Featured</h3>
+							</strong>
+						</div>
+						<!--<div style="margin-top:10px; background-color:black; width:100px; height:3px;"></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="section2">
+			<div class="articles">
+				<div class="Publication">
+					<div class="image">
+						<img src="https://miro.medium.com/max/1292/1*d5A3YWbvLJtdoD-EwY1wYg.png" alt="">
+						</div>
+						<div class="shortNote">
+							<h3>
+There’s so much more to being a software engineer
+</h3>
+							<span>Published April 16th,2020</span>
+							<p>
+Personal And Professional Development For Software Engineers.....
+</p>
+							<button>
+								<a target="_blank" href="https://medium.com/@andrewtugume2/theres-so-much-more-to-being-a-software-engineer-e2ab94c00068">READ MORE</a>
+							</button>
+						</div>
+					</div>
+					<div class="Publication">
+						<div class="image">
+							<img src="https://miro.medium.com/max/602/0*fT_N0b2ejXv-oOLq" alt="">
+							</div>
+							<div class="shortNote">
+								<h3>
+Data Technical Roles in Companies 2020
+</h3>
+								<span>Published Nov 22nd ,2019</span>
+								<p>
+This document will help you understand technical roles and how they contribute to the overall productivity of the organisations.....
+</p>
+								<button>
+									<a target="_blank" href="https://medium.com/@andrewtugume2/data-technical-roles-in-companies-2020-1b57f47caadb">READ MORE</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+																						<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="wavey-svg">
+																							<g transform="translate(0, 7)">
+																								<!-- Yellow -->
+																								<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(238, 219, 74, 0.8);"></path>
+																								<!-- Red -->
+																								<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(253, 125, 125, 0.8); stroke-linejoin:round; "></path>
+																								<!-- Blue -->
+																								<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(102, 159, 180, 0.8); stroke-linejoin:round; "></path>
+																							</g>
+																						</svg>
+																						<div id="members" class="dark-section">
+																							<div class="container">
+																								<div class="row">
+																									<div class="col s12 m6">
+																										<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="andrew-tugume-402ba3142"><a class="LI-simple-link" href='https://ug.linkedin.com/in/andrew-tugume-402ba3142?trk=profile-badge'>Andrew Tugume</a></div>
+																										<div class="wavey-box-text">
+																											<h3 class="heading">Contact:
+																											
+																												<br>Me
+																											
+																												</h3>
+																												<p class="">
+                        You can contact me any time, I will be at your service.
+                    </p>
+																											</div>
+																										</div>
+																										<div class="col s12 m6">
+																											<div id="member-cards-container" class="">
+																												<div class="member-card selected" id="member-card-1">
+																													<div class="member-card-side-action">
+																														<div class="member-card-side-action-content">
+																															<button class="btn btn-flat btn-compact member-card-remove-button">
+																																<i class="mdi-content-clear"></i>
+																															</button>
+																														</div>
+																													</div>
+																													<div class="right right-align">
+																														<div class="group-label">1</div>
+																													</div>
+																													<div class="member-card-initials ">@</div>
+																													<div class="member-card-fields ">
+																														<div class="bold black-text">Email</div>
+																														<div class="member-card-email truncate">contact@andrewtugume.com</div>
+																													</div>
+																													<div class="member-card-footer">
+																														<button class="member-card-edit-button">View Details</button>
+																													</div>
+																												</div>
+																												<div class="member-card selected" id="member-card-2">
+																													<div class="member-card-side-action">
+																														<div class="member-card-side-action-content">
+																															<button class="btn btn-flat btn-compact member-card-remove-button">
+																																<i class="mdi-content-clear"></i>
+																															</button>
+																														</div>
+																													</div>
+																													<div class="right right-align">
+																														<div class="group-label">2</div>
+																													</div>
+																													<div class="member-card-initials ">UG</div>
+																													<div class="member-card-fields ">
+																														<div class="bold black-text">Call</div>
+																														<div class="member-card-email truncate">+256 755017384</div>
+																													</div>
+																													<div class="member-card-footer">
+																														<button class="member-card-edit-button">View Details</button>
+																													</div>
+																												</div>
+																												<div class="member-card selected" id="member-card-3">
+																													<div class="member-card-side-action">
+																														<div class="member-card-side-action-content">
+																															<button class="btn btn-flat btn-compact member-card-remove-button">
+																																<i class="mdi-content-clear"></i>
+																															</button>
+																														</div>
+																													</div>
+																													<div class="right right-align">
+																														<div class="group-label">3</div>
+																													</div>
+																													<div class="member-card-initials ">UG</div>
+																													<div class="member-card-fields ">
+																														<div class="bold black-text">whatsapp</div>
+																														<div class="member-card-email truncate">+256 783235457</div>
+																													</div>
+																													<div class="member-card-footer">
+																														<button class="member-card-edit-button">View Details</button>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>
+																							</div>
+																							<svg viewBox="0 0 100 50" preserveAspectRatio="none" class="wavey-svg" style="transform: rotateX(180deg) scale(-1,1);">
+																								<g transform="translate(0, 7)">
+																									<!-- Yellow -->
+																									<path transform="translate(0, 0)" d="M100,25 Q70,40 50,30 T0,23 v20 h100Z" style="fill:rgba(238, 219, 74, 0.8); stroke-linejoin:round; "></path>
+																									<!-- Red -->
+																									<path transform="translate(0, 0)" d="M100,35 Q70,43 50,30 T0,30 v20 h100Z" style="fill:rgba(253, 125, 125, 0.8); stroke-linejoin:round; "></path>
+																									<!-- Blue -->
+																									<path transform="translate(0, 0)" d="M100,30 Q70,56 50,30 T0,37 v20 h100Z" style="fill:rgba(102, 159, 180, 0.8); stroke-linejoin:round; "></path>
+																								</g>
+																							</svg>
+																							<!-- Footer -->
+																							<footer class="footer-copyright">
+																								<a href="https://www.facebook.com/tugume.andrew" target="_blank" class="btn-floating btn-fb mx-1">
+																									<i class="fab fa-facebook-f"></i>
+																								</a>
+																								<a href="https://www.linkedin.com/in/tugume-andrew-402ba3142/" target="_blank" class="btn-floating btn-fb mx-1">
+																									<i class="fa fa-linkedin" aria-hidden="true"></i>
+																								</a>
+																								<a href="https://www.instagram.com/tugume_drew/" target="_blank" class="btn-floating btn-fb mx-1">
+																									<i class="fab fa-instagram"></i>
+																								</a>
+																								<a href="https://twitter.com/TugumeAndrew3" target="_blank" class="btn-floating btn-fb mx-1">
+																									<i class="fab fa-twitter"></i>
+																								</a>
+      © 2020 Copyright ❤️Andrew Tugume
+  
+																						
+																							</footer>
+																							<!-- Footer -->
+																							<!-- Compiled and minified JavaScript -->
+																							<script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+																							<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+																							<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+																							<script>
+    $(document).ready(function(){
+		$('.carousel').carousel();
+        $('.sidenav').sidenav();
+        // $('.carousel.carousel-slider').carousel({fullWidth: true});
+ 
+ 
+
+
+      });
+    </script>
+																						</body>
+																					</html>
